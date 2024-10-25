@@ -1,0 +1,215 @@
+%-------------------------
+% Resume in Latex
+% Author : Ashish Sharma
+% Based off of: https://github.com/ashishsharmastudio/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%  RESUME STARTS HERE  %
+
+
+\begin{document}
+
+%----------HEADING----------
+
+%----------HEADING----------
+%----------HEADING----------
+\begin{center}
+   \textbf{\Huge \scshape Ashish Sharma} \\ \vspace{1pt}
+    \small 
+    \raisebox{-0.05\height}{\faPhone*} \href{tel:+919140585097}{9140585097} $|$ 
+    \raisebox{-0.05\height}{\faEnvelope} \href{mailto:ashishsharmastudio@gmail.com}{ashishsharmastudio@gmail.com} $|$ 
+    \raisebox{-0.05\height}{\faGithub} \href{https://github.com/ashishsharmastudio}{ashishsharmastudio} $|$ 
+    \raisebox{-0.05\height}{\faLinkedin} \href{https://www.linkedin.com/in/ashish-sharma-rrr/}{ashish-sharma-rrr} $|$ 
+    \raisebox{-0.05\height}{\faGlobe} \href{https://ashish-sharma-portfolio-phi.vercel.app/}{portfolio}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+%-------------------------------------------
+\resumeSubheading
+      {T/A Full stack development}{Jan 2024 - Ongoing}
+      {GEEKSTER}{}
+      \resumeItemListStart
+      \resumeItem{Led hands-on instruction in Full Stack Web Development, assisting students with React component architecture, REST API integration, database design, and deployment using AWS, Render, and Vercel platforms}
+       \resumeItem{Provided debugging support across the complete MERN stack (MongoDB, Express.js, React.js, Node.js), helping students troubleshoot authentication systems, state management, database queries, and server-side integration.}
+       \resumeItem{Mentored students in implementing modern web features including AI integration using Gemini API, real-time data handling, responsive design patterns, and best practices for code organization and deployment}
+    \resumeItemListEnd
+  \resumeSubheading
+      {Full stack developer}{Sept 2023 - Jan 2024}
+      {Incentus}{}
+      \resumeItemListStart
+       \resumeItem{Designed, developed, and deployed a full-stack web app (MERN stack) for a seamless user experience, driving high satisfaction.}
+        \resumeItem{Conducted thorough API testing to guarantee seamless data retrieval and rendering for a diverse array of medical equipment listings.}
+         \resumeItem{Orchestrated the deployment of project code on GitHub, establishing robust version control practices and overseeing live website deployment.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+            \resumeItem{\textbf{Languages}{: HTML5, CSS3, JavaScript, TypeScript, Python, PHP, SQL, Markdown}}
+            \resumeItem{\textbf{Technologies}{: React, NextJS, Node.js, Express.js, Tailwind, shadcn/ui, MaterialUI, etc}}
+            \resumeItem{\textbf{Tools}{: Git, GitHub, GitLab, ClerkAuth, Postman, Shopify, ViteJs, Webpack, JWT Token, npm/yarn, VScode, etc}}
+\resumeItemListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Paint My Mood - AI Emotion Detection App}}
+          {{ {\small {\faGithub} \href{https://github.com/Ashishsharmastudio/paint-my-mood}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://paint-my-mood-theta.vercel.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Built Next.js-based emotion detection web app integrating Hugging Face's AI models for text analysis with Tailwind CSS and framer-motion animations}
+            \resumeItem{Implemented server-side rendering and efficient error handling for optimal performance and enhanced user experience}
+          \resumeItemListEnd
+    
+    \resumeProjectHeading
+          {\textbf{AshishSharmaBlog - Full Stack Blogging Platform}}
+          {{ {\small {\faGithub} \href{https://github.com/Ashishsharmastudio/AshishSharmaBlogs}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://multi-auth-blog.netlify.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Developed MERN stack platform with JWT authentication, real-time collaboration, and RESTful APIs for content management}
+            \resumeItem{Designed MongoDB schema for efficient data handling and implemented role-based access control for content moderation}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\textbf{Next.js Blog with Sanity CMS}}
+          {{ {\small {\faGithub} \href{https://github.com/Ashishsharmastudio/AshishSharmaBlog}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://www.ashishsharmablog.tech/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Created SEO-optimized blog using Next.js, Sanity CMS, and GraphQL with NextAuth authentication and automated Vercel deployment}
+            \resumeItem{Integrated dynamic content management through Sanity's headless CMS and responsive design with Tailwind CSS}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{E-Learning Platform}}
+          {{ {\small {\faGithub} \href{https://github.com/Ashishsharmastudio/Thinking-Grey-E-Learning-platform}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://thinking-grey-e-learning-platform.vercel.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Built Next.js-based learning platform with OTP authentication, MongoDB integration, and progress tracking system}
+            \resumeItem{Implemented responsive design and optimized content delivery for cross-device compatibility}
+          \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Full Stack Blog with Admin Portal}}
+          {{ {\small {\faGithub} \href{https://github.com/Ashishsharmastudio/Blog-IN-NEXT.JS}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://blog-in-next-js-xmwn.vercel.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Engineered Next.js blog platform with separate admin dashboard, implementing server-side rendering for enhanced SEO}
+            \resumeItem{Developed secure content management system with protected API routes and efficient database integration}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%%
+%-----------EDUCATION-----------
+\section{Education} 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dr. A. P. J. Abdul Kalam Technical University}{ Lucknow, Uttar Pradesh}
+      {Bachelor Of Technology in Computer Science Engineering}{Aug 2020 -- June 2024}
+       \resumeItemListStart
+        \resumeItem{Cumulative GPA : {6.61/10.0}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
